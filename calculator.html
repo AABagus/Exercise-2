@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" disabled id="layar" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="tombol('7')">7</button></td>
+                <td><button class="btn" onclick="tombol('8')">8</button></td>
+                <td><button class="btn" onclick="tombol('9')">9</button></td>    
+                <td><button class="btn opr" onclick="document.querySelector('#layar').value += '*'">X</button></td>        
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="tombol('4')">4</button></td>    
+                <td><button class="btn" onclick="tombol('5')">5</button></td>   
+                <td><button class="btn" onclick="tombol('6')">6</button></td>    
+                <td><button class="btn opr" onclick="document.querySelector('#layar').value += '/'">/</button></td>       
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="tombol('1')">1</button></td>    
+                <td><button class="btn" onclick="tombol('2')">2</button></td>    
+                <td><button class="btn" onclick="tombol('3')">3</button></td>    
+                <td><button class="btn opr" onclick="document.querySelector('#layar').value += '-'">-</button></td>    
+            </tr>
+            <tr>
+                <td><button class="btn clr" onclick="document.querySelector('#layar').value = '0'">C</button></td>    
+                <td><button class="btn" onclick="tombol('0')">0</button></td>    
+                <td><button class="btn" onclick="tombol('.')">.</button></td>    
+                <td><button class="btn opr" onclick="document.querySelector('#layar').value += '+'">+</button></td>    
+            </tr>     
+            <tr>
+                <td colspan="4">  
+                    <button class="btn hsl" onclick="document.querySelector('#layar').value = eval(document.querySelector('#layar').value)">=</button>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="calc.js"></script>
+    </body>
+</html>

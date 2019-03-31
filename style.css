@@ -1,0 +1,38 @@
+table {
+    border: none;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+    border: 1px;
+}
+input[type=text]{
+    padding: 10px;
+    width: 430px;
+    border-style: solid;
+    text-align: right;
+    font-size: 16px;
+}
+input[type=text]:disabled{
+    background-color: white;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.opr {
+    background-color: grey;
+}
+.clr {
+    background-color: red;
+}
+.hsl {
+    width: 430px;
+    background-color: goldenrod;
+}
